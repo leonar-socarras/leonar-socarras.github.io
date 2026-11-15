@@ -13,7 +13,8 @@
 <meta property="og:url" content="https://leonar-socarras.github.io/">
 <meta property="og:image" content="https://leonar-socarras.github.io/img/leonar-socarras.jpg">
 <link rel="canonical" href="https://leonar-socarras.github.io/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c3a55'/%3E%3Cpath d='M32 10 C34 26 38 30 54 32 C38 34 34 38 32 54 C30 38 26 34 10 32 C26 30 30 26 32 10Z' fill='%23f4cf1f'/%3E%3C/svg%3E">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/avatar.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -46,7 +47,9 @@
   .heroe{position:relative;background:var(--hero);color:#fff;overflow:hidden;}
   .heroe::after{content:"";position:absolute;left:0;right:0;bottom:0;height:200px;background:var(--navy);}
   .barra{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding-top:22px;}
-  .marca{font-weight:700;letter-spacing:.02em;text-decoration:none;font-size:1rem;}
+  .marca{display:inline-flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.02em;text-decoration:none;font-size:1rem;}
+  .marca img{width:40px;height:40px;border-radius:10px;box-shadow:0 0 0 2px rgba(255,255,255,.35);}
+  .menu .tarjeta-link{color:var(--gold);font-weight:600;opacity:1;}
   .menu{display:flex;gap:28px;list-style:none;margin:0;padding:0;}
   .menu a{text-decoration:none;font-size:.98rem;opacity:.92;}
   .menu a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--gold);}
@@ -139,7 +142,12 @@
   .cierre h2{font-size:clamp(1.9rem,3vw,2.5rem);margin:0 0 14px;font-weight:700;line-height:1.15;}
   .cierre p{margin:0;color:var(--on-dark-muted);font-size:1.06rem;}
   .cierre blockquote{margin:22px 0 0;padding:0;font-style:italic;color:#fff;font-size:1.02rem;}
-  .cierre .botones{justify-content:flex-end;}
+  .qr-bloque{display:flex;gap:24px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-radius:var(--r-md);padding:22px;}
+  .qr-marco{flex:none;display:block;background:#fff;border-radius:12px;padding:8px;}
+  .qr-marco img{width:152px;height:152px;}
+  .qr-bloque h3{margin:0 0 6px;font-size:1.15rem;}
+  .qr-bloque p{font-size:.95rem;margin:0 0 16px;}
+  .qr-bloque .btn{min-width:0;padding:11px 16px;font-size:.9rem;}
   .cierre .estrella{width:90px;height:90px;right:6%;top:-20px;}
   footer{background:var(--navy-deep);color:var(--on-dark-muted);font-size:.88rem;padding:22px 0;}
   footer .envoltura{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
@@ -156,7 +164,6 @@
     .pista{grid-auto-columns:calc((100% - 24px)/2);}
     .sobre{grid-template-columns:1fr;gap:48px;}
     .cierre .envoltura{grid-template-columns:1fr;}
-    .cierre .botones{justify-content:flex-start;}
   }
   @media (max-width:720px){
     .envoltura{padding:0 20px;}
@@ -175,6 +182,8 @@
     .pista{grid-auto-columns:86%;}
     .cifras dt{font-size:2.7rem;}
     .btn{flex:1;min-width:0;padding:14px 12px;white-space:nowrap;}
+    .qr-bloque{flex-direction:column;text-align:center;}
+    .marca span{display:none;}
   }
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{transition:none!important;}}
   @media print{
@@ -201,7 +210,7 @@
 <header class="heroe" id="inicio">
   <div class="envoltura">
     <nav class="barra" aria-label="Principal">
-      <a class="marca" href="#inicio">Leonar.Socarras</a>
+      <a class="marca" href="#inicio" aria-label="Leonar Socarrás, inicio"><img src="img/logo.svg" alt="" width="40" height="40"><span>Leonar.Socarras</span></a>
       <button class="abrir-menu" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
       <ul class="menu" id="menu">
         <li><a href="#sobre">Sobre mí</a></li>
@@ -210,6 +219,7 @@
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#trayectoria">Trayectoria</a></li>
         <li><a href="#contacto">Contacto</a></li>
+        <li><a class="tarjeta-link" href="tarjeta.html">Mi tarjeta</a></li>
       </ul>
     </nav>
     <div class="heroe-grid">
@@ -396,9 +406,16 @@
       <p>Estoy abierto a colaboraciones internacionales, redes de investigación y estancias postdoctorales.</p>
       <blockquote>La educación, la ciencia y la tecnología deben converger para construir una sociedad más justa, inclusiva y consciente.</blockquote>
     </div>
-    <div class="botones">
-      <a class="btn btn-oro" href="mailto:leonarsomo@unisabana.edu.co">Escríbeme</a>
-      <a class="btn btn-blanco" href="https://www.linkedin.com/in/leonarsocarrasmolina/" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="qr-bloque">
+      <a class="qr-marco" href="tarjeta.html" aria-label="Abrir mi tarjeta digital"><img src="img/qr-tarjeta.svg" alt="Código QR de la tarjeta digital de Leonar Socarrás" width="168" height="168"></a>
+      <div>
+        <h3>Mi tarjeta digital</h3>
+        <p>Escanea el código para guardar mi contacto y abrir mis perfiles: correo, LinkedIn, ORCID y GitHub.</p>
+        <div class="botones">
+          <a class="btn btn-oro" href="tarjeta.html">Ver tarjeta</a>
+          <a class="btn btn-blanco" href="leonar-socarras.vcf" download="Leonar-Socarras.vcf">Guardar contacto</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
