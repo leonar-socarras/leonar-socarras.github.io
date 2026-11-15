@@ -3,316 +3,424 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leonar.Socarras</title>
+<title>Leonar Socarrás Molina, PhD · IA en educación</title>
 <meta name="description" content="Leonar Socarrás Molina, PhD. Docente-investigador en inteligencia artificial aplicada a la educación, STEM, Diseño Universal para el Aprendizaje y ciencia de datos. Valledupar, Colombia.">
 <meta name="author" content="Leonar Socarrás Molina">
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
-<meta property="og:title" content="Leonar.Socarras">
+<meta name="theme-color" content="#0c3a55">
+<meta property="og:title" content="Leonar Socarrás Molina, PhD">
 <meta property="og:description" content="Docente-investigador en IA aplicada a la educación, STEM y DUA. Valledupar, Colombia.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://leonar-socarras.github.io/">
+<meta property="og:image" content="https://leonar-socarras.github.io/img/leonar-socarras.jpg">
 <link rel="canonical" href="https://leonar-socarras.github.io/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231f5c57'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' text-anchor='middle' fill='%23f5f3ee'%3EL.%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c3a55'/%3E%3Cpath d='M32 10 C34 26 38 30 54 32 C38 34 34 38 32 54 C30 38 26 34 10 32 C26 30 30 26 32 10Z' fill='%23f4cf1f'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Leonar Socarrás Molina","honorificSuffix":"PhD","jobTitle":"Docente-investigador","url":"https://leonar-socarras.github.io/","address":{"@type":"PostalAddress","addressLocality":"Valledupar","addressRegion":"Cesar","addressCountry":"CO"},"worksFor":{"@type":"EducationalOrganization","name":"Institución Educativa Manuel Germán Cuello Gutiérrez"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Universidad Rafael Belloso Chacín"},{"@type":"CollegeOrUniversity","name":"Universidad de La Sabana"},{"@type":"CollegeOrUniversity","name":"Universidad de Santander"}],"knowsAbout":["Inteligencia artificial en educación","Educación STEM","Diseño Universal para el Aprendizaje","Ciencia de datos","Procesamiento de lenguaje natural","Aprendizaje por refuerzo"],"sameAs":["https://orcid.org/0000-0003-0601-9151","https://www.linkedin.com/in/leonarsocarrasmolina/","https://github.com/leonar-socarras"]}
+{"@context":"https://schema.org","@type":"Person","name":"Leonar Socarrás Molina","honorificSuffix":"PhD","jobTitle":"Docente-investigador","url":"https://leonar-socarras.github.io/","image":"https://leonar-socarras.github.io/img/leonar-socarras.jpg","address":{"@type":"PostalAddress","addressLocality":"Valledupar","addressRegion":"Cesar","addressCountry":"CO"},"worksFor":{"@type":"EducationalOrganization","name":"Institución Educativa Manuel Germán Cuello Gutiérrez"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Universidad Rafael Belloso Chacín"},{"@type":"CollegeOrUniversity","name":"Universidad de La Sabana"},{"@type":"CollegeOrUniversity","name":"Universidad de Santander"}],"knowsAbout":["Inteligencia artificial en educación","Educación STEM","Diseño Universal para el Aprendizaje","Ciencia de datos","Procesamiento de lenguaje natural","Aprendizaje por refuerzo"],"sameAs":["https://orcid.org/0000-0003-0601-9151","https://www.linkedin.com/in/leonarsocarrasmolina/","https://github.com/leonar-socarras"]}
 </script>
 <style>
   :root{
-    --bg:#f5f3ee;--surface-raised:#fbfaf7;--ink:#1b1b1b;--muted:#6c6760;
-    --line:#e4ded2;--line-strong:#8a8478;--accent:#1f5c57;--on-accent:#f5f3ee;--accent-soft:#dde9e6;--focus:var(--accent);
-    --font-serif:Georgia,"Times New Roman",serif;
-    --space-4:4px;--space-8:8px;--space-16:16px;--space-18:18px;--space-24:24px;--space-48:48px;--space-64:64px;--space-88:88px;
-    --radius-2:2px;--measure:660px;--hairline:1px;
-  }
-  @media (prefers-color-scheme:dark){
-    :root{--bg:#161513;--surface-raised:#201e1b;--ink:#ece8e1;--muted:#a39d93;
-      --line:#34312c;--line-strong:#7a746a;--accent:#7cc3b9;--on-accent:#161513;--accent-soft:#1d3532;}
+    --navy:#0c3a55;--navy-deep:#092d43;--ink:#0c3a55;--text:#3c4d5c;--muted:#5b6b78;
+    --bg:#ffffff;--bg-alt:#f3f8fb;--line:#d9e4ec;
+    --gold:#f4cf1f;--gold-ink:#a07f00;--gold-soft:#fff6cc;
+    --on-dark-muted:#cfdbe4;
+    --hero:linear-gradient(110deg,#3d5b8f 0%,#3b6f86 48%,#56767f 100%);
+    --font:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --r-sm:8px;--r-md:14px;--wrap:1160px;
   }
   *{box-sizing:border-box;}
-  html{-webkit-text-size-adjust:100%;}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-serif);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
-  ::selection{background:var(--accent-soft);color:var(--ink);}
-  .saltar{position:absolute;left:var(--space-24);top:-48px;padding:var(--space-4) var(--space-8);background:var(--accent);color:var(--on-accent);border:0;}
-  .saltar:focus{top:var(--space-16);}
-  .envoltura{max-width:var(--measure);margin:0 auto;padding:var(--space-88) var(--space-24) var(--space-64);}
-  a{color:var(--ink);text-decoration:none;border-bottom:var(--hairline) solid var(--line);transition:color .12s,border-color .12s;}
-  a:hover{color:var(--accent);border-bottom-color:var(--accent);}
-  a:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:var(--radius-2);}
-  .ext::after{content:"\2009\2197";color:var(--muted);font-size:.85em;}
-  header{margin-bottom:var(--space-48);}
-  h1{font-weight:400;font-size:44px;line-height:48px;letter-spacing:-0.01em;margin:0 0 var(--space-16);}
-  .titulo{color:var(--muted);font-size:1rem;margin:0 0 var(--space-4);}
-  .lugar{color:var(--muted);font-size:0.9rem;margin:0;}
-  .enlaces{margin-top:var(--space-24);font-size:0.9rem;display:flex;flex-wrap:wrap;gap:var(--space-8) var(--space-24);}
-  .enlaces a{color:var(--muted);border-bottom-color:transparent;}
-  .enlaces a:hover{color:var(--accent);border-bottom-color:var(--accent);}
-  section{margin:0 0 var(--space-48);}
-  h2{font-weight:400;font-size:0.76rem;line-height:1.4;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted);margin:0 0 var(--space-18);padding-bottom:var(--space-8);border-bottom:var(--hairline) solid var(--line);}
-  p{margin:0 0 var(--space-16);}
-  ul{margin:0;padding:0;list-style:none;}
-  ul li{padding:5px 0;}
-  ul li .d{color:var(--muted);}
-  .proyectos{margin:0 calc(-1 * var(--space-16));}
-  .proyecto{display:block;padding:10px var(--space-16);border:0;transition:background-color .12s;}
-  .proyecto:hover{background:var(--surface-raised);color:var(--ink);}
-  .proyecto h3{margin:0 0 3px;font-size:1rem;line-height:1.5;font-weight:400;}
-  .proyecto:hover h3{color:var(--accent);}
-  .proyecto p{margin:0;color:var(--muted);font-size:0.92rem;line-height:1.6;}
-  .crono li{display:grid;grid-template-columns:1fr auto;gap:var(--space-16);align-items:baseline;}
-  .crono .a{color:var(--muted);font-size:0.9rem;white-space:nowrap;font-variant-numeric:tabular-nums;}
-  .crono .d{display:block;font-size:0.92rem;line-height:1.6;}
-  .nota{color:var(--muted);font-size:0.92rem;margin-top:var(--space-16);}
-  .proyecto.fijo:hover{background:none;}
-  .proyecto.fijo + .proyecto.fijo{border-top:var(--hairline) solid var(--line);}
-  .proyecto.fijo{padding:14px 0;margin:0 var(--space-16);}
-  @media (max-width:560px){.proyecto.fijo{margin:0;}}
-  .proyecto.fijo:hover h3{color:var(--ink);}
-  .proyecto p.tipo{color:var(--accent);font-size:0.82rem;letter-spacing:0.02em;margin:0 0 4px;}
-  blockquote{margin:0;font-style:italic;color:var(--muted);}
-  footer{margin-top:var(--space-24);color:var(--muted);font-size:0.82rem;}
-  @media (max-width:560px){
-    .proyectos{margin:0;}
-    .proyecto{padding:10px 0;}
-    .crono li{grid-template-columns:1fr;gap:0;}
-    .segmentos button{letter-spacing:0.06em;padding:10px 2px;}
-    body{font-size:16.5px;}
-    .envoltura{padding-top:56px;}
-    h1{font-size:34px;line-height:40px;}
-    header{margin-bottom:var(--space-48);}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{margin:0;font-family:var(--font);color:var(--text);background:var(--bg);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px;}
+  .claro :focus-visible{outline-color:var(--navy);}
+  .envoltura{max-width:var(--wrap);margin:0 auto;padding:0 32px;}
+  .saltar{position:absolute;left:16px;top:-60px;z-index:10;background:var(--gold);color:var(--navy);padding:8px 14px;border-radius:var(--r-sm);font-weight:600;text-decoration:none;}
+  .saltar:focus{top:16px;}
+  section{scroll-margin-top:24px;}
+
+  /* héroe */
+  .heroe{position:relative;background:var(--hero);color:#fff;overflow:hidden;}
+  .heroe::after{content:"";position:absolute;left:0;right:0;bottom:0;height:200px;background:var(--navy);}
+  .barra{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding-top:22px;}
+  .marca{font-weight:700;letter-spacing:.02em;text-decoration:none;font-size:1rem;}
+  .menu{display:flex;gap:28px;list-style:none;margin:0;padding:0;}
+  .menu a{text-decoration:none;font-size:.98rem;opacity:.92;}
+  .menu a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--gold);}
+  .abrir-menu{display:none;background:none;border:1px solid rgba(255,255,255,.5);color:#fff;border-radius:var(--r-sm);padding:6px 12px;font:inherit;font-size:.9rem;cursor:pointer;}
+  .heroe-grid{position:relative;z-index:2;display:grid;grid-template-columns:440px 1fr;gap:72px;align-items:end;padding:72px 0 64px;}
+  .figura{position:relative;width:380px;height:470px;margin-left:60px;}
+  .rejilla{position:absolute;left:120px;top:-24px;width:300px;height:400px;border-left:1px solid rgba(255,255,255,.85);border-top:1px solid rgba(255,255,255,.85);
+    background-image:linear-gradient(rgba(255,255,255,.85) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.85) 1px,transparent 1px);background-size:100px 100px;}
+  .arco{position:absolute;inset:0;border-radius:190px 190px 0 0;overflow:hidden;background:#b9cfdc;}
+  .arco img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;}
+  .estrella{position:absolute;fill:var(--gold);}
+  .estrella.grande{width:150px;height:150px;left:-60px;top:-80px;z-index:1;}
+  .texto-heroe{padding-bottom:8px;max-width:620px;}
+  .texto-heroe h1{font-size:clamp(2.1rem,3.6vw,3rem);line-height:1.12;font-weight:700;margin:0 0 20px;letter-spacing:-.01em;}
+  .texto-heroe .intro{font-size:1.12rem;margin:0 0 26px;color:#eef3f7;}
+  .texto-heroe .intro strong{color:#fff;font-weight:700;}
+  .redes{display:flex;gap:10px;margin:0 0 54px;padding:0;list-style:none;}
+  .redes a{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;text-decoration:none;font-weight:700;font-size:.85rem;border:1px solid rgba(255,255,255,.55);transition:background-color .15s,color .15s;}
+  .redes a:hover{background:#fff;color:var(--navy);}
+  .contacto-linea{display:flex;flex-wrap:wrap;gap:12px 36px;margin:0 0 28px;padding:0;list-style:none;font-size:1.02rem;}
+  .contacto-linea li{display:flex;align-items:center;gap:10px;}
+  .contacto-linea svg{width:20px;height:20px;fill:var(--gold);flex:none;}
+  .contacto-linea a{text-decoration:none;}
+  .contacto-linea a:hover{text-decoration:underline;}
+  .botones{display:flex;flex-wrap:wrap;gap:16px;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-width:168px;padding:14px 26px;border-radius:var(--r-sm);font-weight:600;font-size:.98rem;text-decoration:none;border:0;cursor:pointer;font-family:inherit;transition:transform .15s,box-shadow .15s;}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.18);}
+  .btn-oro{background:var(--gold);color:var(--navy);}
+  .btn-blanco{background:#fff;color:var(--navy);}
+  .btn-azul{background:var(--navy);color:#fff;}
+  .guia{position:absolute;right:40px;top:150px;z-index:2;display:flex;flex-direction:column;align-items:center;gap:14px;}
+  .guia i{display:block;width:0;height:230px;border-left:2px dashed rgba(255,255,255,.85);}
+  .guia svg{width:48px;height:48px;fill:var(--gold);}
+
+  /* bloques */
+  .bloque{padding:96px 0;}
+  .bloque.alt{background:var(--bg-alt);}
+  .titulo-bloque{font-size:clamp(1.9rem,3vw,2.6rem);line-height:1.15;color:var(--ink);font-weight:700;margin:0 0 14px;letter-spacing:-.01em;}
+  .bajada{font-size:1.08rem;color:var(--muted);margin:0;max-width:640px;}
+  .cabeza{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:48px;flex-wrap:wrap;}
+  .sobre{display:grid;grid-template-columns:1.25fr 1fr;gap:80px;align-items:start;}
+  .sobre p{margin:0 0 16px;font-size:1.04rem;}
+  .cifras{display:grid;grid-template-columns:1fr 1fr;gap:44px 40px;margin:0;}
+  .cifras dt{font-size:3.4rem;font-weight:800;color:var(--gold-ink);line-height:1;letter-spacing:-.02em;}
+  .cifras dd{margin:10px 0 0;color:var(--ink);font-weight:500;font-size:1rem;}
+  .tarjetas{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .tarjeta{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:30px 28px;transition:box-shadow .2s,transform .2s;}
+  .tarjeta:hover{box-shadow:0 14px 34px rgba(12,58,85,.10);transform:translateY(-3px);}
+  .tarjeta svg{width:34px;height:34px;fill:var(--gold);margin-bottom:18px;}
+  .tarjeta h3{font-size:1.14rem;color:var(--ink);margin:0 0 10px;font-weight:700;line-height:1.3;}
+  .tarjeta p{margin:0;font-size:.97rem;color:var(--muted);}
+  .pista{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 48px)/3);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 20px;scrollbar-width:thin;}
+  .pub{scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:28px;display:flex;flex-direction:column;gap:14px;}
+  .pub .anio{align-self:flex-start;background:var(--gold-soft);color:#7a5f00;font-weight:700;font-size:.82rem;padding:4px 12px;border-radius:999px;}
+  .pub h3{margin:0;color:var(--ink);font-size:1.02rem;line-height:1.4;font-weight:600;}
+  .pub .revista{margin:0;color:var(--muted);font-size:.9rem;font-style:italic;}
+  .pub a{margin-top:auto;color:var(--navy);font-weight:600;font-size:.9rem;text-decoration:none;}
+  .pub a:hover{text-decoration:underline;}
+  .flechas{display:flex;gap:10px;}
+  .flechas button{width:48px;height:48px;border-radius:50%;border:1px solid var(--navy);background:#fff;color:var(--navy);font-size:1.2rem;cursor:pointer;font-family:inherit;}
+  .flechas button:hover{background:var(--navy);color:#fff;}
+  .pestanas{display:inline-flex;gap:6px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px;margin-bottom:36px;flex-wrap:wrap;}
+  .pestanas button{font:inherit;font-weight:600;font-size:.94rem;color:var(--muted);background:none;border:0;border-radius:999px;padding:10px 22px;cursor:pointer;}
+  .pestanas button[aria-selected="true"]{background:var(--navy);color:#fff;}
+  .pestanas button .n{opacity:.75;font-weight:500;margin-left:6px;}
+  .rejilla-proy{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .rejilla-proy[hidden]{display:none;}
+  .proy{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:26px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;}
+  a.proy:hover{border-color:var(--navy);}
+  .proy .estado{align-self:flex-start;font-size:.78rem;font-weight:600;color:var(--navy);background:var(--bg-alt);border:1px solid var(--line);padding:3px 10px;border-radius:999px;}
+  .proy h3{margin:0;font-size:1.06rem;line-height:1.35;color:var(--ink);font-weight:700;}
+  .proy .marco{margin:0;font-size:.85rem;color:var(--gold-ink);font-weight:600;}
+  .proy p{margin:0;font-size:.94rem;color:var(--muted);}
+  .dos{display:grid;grid-template-columns:1fr 1fr;gap:64px;}
+  .sub{font-size:1.25rem;color:var(--ink);margin:0 0 26px;font-weight:700;display:flex;align-items:center;gap:12px;}
+  .sub svg{width:22px;height:22px;fill:var(--gold);}
+  .linea-tiempo{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line);}
+  .linea-tiempo li{position:relative;padding:0 0 24px;}
+  .linea-tiempo li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px var(--bg-alt);}
+  .linea-tiempo .cuando{font-size:.82rem;font-weight:700;color:var(--gold-ink);letter-spacing:.03em;}
+  .linea-tiempo strong{display:block;color:var(--ink);font-weight:600;line-height:1.4;margin:2px 0 4px;}
+  .linea-tiempo span.d{display:block;font-size:.93rem;color:var(--muted);}
+  .nota{font-size:.93rem;color:var(--muted);margin:8px 0 0;}
+  .instituciones{display:flex;flex-wrap:wrap;justify-content:center;gap:16px 44px;margin:0;padding:0;list-style:none;}
+  .instituciones li{font-weight:700;color:#5b6b78;font-size:1.02rem;}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none;}
+  .chips li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:.92rem;color:var(--ink);font-weight:500;}
+  .cierre{background:var(--navy);color:#fff;padding:88px 0;position:relative;overflow:hidden;}
+  .cierre .envoltura{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center;}
+  .cierre h2{font-size:clamp(1.9rem,3vw,2.5rem);margin:0 0 14px;font-weight:700;line-height:1.15;}
+  .cierre p{margin:0;color:var(--on-dark-muted);font-size:1.06rem;}
+  .cierre blockquote{margin:22px 0 0;padding:0;font-style:italic;color:#fff;font-size:1.02rem;}
+  .cierre .botones{justify-content:flex-end;}
+  .cierre .estrella{width:90px;height:90px;right:6%;top:-20px;}
+  footer{background:var(--navy-deep);color:var(--on-dark-muted);font-size:.88rem;padding:22px 0;}
+  footer .envoltura{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+  footer a{color:#fff;text-decoration:none;}
+
+  @media (max-width:1640px){.guia{display:none;}}
+  @media (max-width:1080px){
+    .heroe::after{display:none;}
+    .heroe{background:linear-gradient(180deg,#3d5b8f 0%,#3b6f86 40%,#0c3a55 78%);}
+    .heroe-grid{grid-template-columns:1fr;gap:56px;justify-items:start;padding-top:56px;}
+    .figura{margin-left:70px;}
+    .guia{display:none;}
+    .tarjetas,.rejilla-proy{grid-template-columns:1fr 1fr;}
+    .pista{grid-auto-columns:calc((100% - 24px)/2);}
+    .sobre{grid-template-columns:1fr;gap:48px;}
+    .cierre .envoltura{grid-template-columns:1fr;}
+    .cierre .botones{justify-content:flex-start;}
   }
-  .indice{margin-top:var(--space-24);padding-top:var(--space-16);border-top:var(--hairline) solid var(--line);font-size:0.76rem;letter-spacing:0.14em;text-transform:uppercase;display:flex;flex-wrap:wrap;gap:var(--space-8) var(--space-24);}
-  .indice a{color:var(--muted);border-bottom-color:transparent;}
-  .indice a:hover{color:var(--accent);border-bottom-color:var(--accent);}
-  html{scroll-behavior:smooth;}
-  .acordeon{scroll-margin-top:var(--space-24);}
-  .pubs li{padding:8px 0;}
-  .pubs .d a{color:var(--muted);}
-  .pubs .d a:hover{color:var(--accent);}
-  /* segmentos */
-  .segmentos{margin-top:var(--space-24);display:grid;grid-template-columns:repeat(3,1fr);border:var(--hairline) solid var(--line-strong);border-radius:var(--radius-2);padding:3px;gap:3px;}
-  .segmentos button{font:inherit;font-size:0.76rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);background:none;border:0;border-radius:var(--radius-2);padding:10px var(--space-8);cursor:pointer;transition:background-color .12s,color .12s;}
-  .segmentos button:hover{color:var(--ink);background:var(--surface-raised);}
-  .segmentos button[aria-selected="true"]{background:var(--accent);color:var(--on-accent);}
-  .segmentos button:focus-visible,.todo:focus-visible,summary:focus-visible{outline:2px solid var(--focus);outline-offset:2px;}
-  .todo{font:inherit;font-size:0.82rem;color:var(--muted);background:none;border:0;padding:0;margin-top:var(--space-16);cursor:pointer;border-bottom:var(--hairline) solid var(--line);}
-  .todo:hover{color:var(--accent);border-bottom-color:var(--accent);}
-  .panel[hidden]{display:none;}
-  .panel:focus{outline:none;}
-  /* acordeón */
-  .acordeon{border-bottom:var(--hairline) solid var(--line);}
-  .acordeon:first-child{border-top:var(--hairline) solid var(--line);}
-  .acordeon summary{list-style:none;display:flex;align-items:center;gap:var(--space-16);padding:var(--space-18) 0;cursor:pointer;}
-  .acordeon summary::-webkit-details-marker{display:none;}
-  .acordeon summary h2{margin:0;padding:0;border:0;flex:1;transition:color .12s;}
-  .acordeon summary:hover h2,.acordeon[open] summary h2{color:var(--ink);}
-  .cuenta{font-size:0.82rem;color:var(--muted);font-variant-numeric:tabular-nums;}
-  .icono{position:relative;width:12px;height:12px;flex:none;}
-  .icono::before,.icono::after{content:"";position:absolute;left:0;top:5.5px;width:12px;height:1px;background:var(--muted);transition:transform .2s;}
-  .icono::after{transform:rotate(90deg);}
-  .acordeon[open] .icono::after{transform:rotate(0);}
-  .cuerpo{padding:0 0 var(--space-24);}
-  .cuerpo > :last-child{margin-bottom:0;}
+  @media (max-width:720px){
+    .envoltura{padding:0 20px;}
+    .abrir-menu{display:block;}
+    .menu{display:none;position:absolute;right:0;top:56px;flex-direction:column;gap:4px;background:var(--navy);padding:12px;border-radius:var(--r-md);min-width:200px;box-shadow:0 14px 30px rgba(0,0,0,.25);}
+    .menu.abierto{display:flex;}
+    .menu a{display:block;padding:8px 10px;}
+    .figura{width:250px;height:310px;margin-left:34px;}
+    .arco{border-radius:125px 125px 0 0;}
+    .rejilla{left:80px;width:200px;height:270px;background-size:66.6px 66.6px;top:-18px;}
+    .estrella.grande{width:96px;height:96px;left:-38px;top:-52px;}
+    .redes{margin-bottom:40px;}
+    .bloque{padding:68px 0;}
+    .tarjetas,.rejilla-proy,.dos{grid-template-columns:1fr;}
+    .dos{gap:48px;}
+    .pista{grid-auto-columns:86%;}
+    .cifras dt{font-size:2.7rem;}
+    .btn{flex:1;min-width:0;padding:14px 12px;white-space:nowrap;}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{transition:none!important;}}
   @media print{
-    .segmentos,.todo,.icono{display:none;}
-    .panel[hidden]{display:block!important;}
-    .acordeon summary{padding:8px 0 4px;}
-    body{background:#fff;color:#000;font-size:11pt;}
-    .saltar,.indice{display:none;}
-    .envoltura{max-width:none;padding:0;}
-    a{border:0;color:#000;}
-    .ext::after{content:"";}
-    .proyecto{padding:4px 0;}
-    section{break-inside:avoid-page;}
+    .heroe{background:none;color:#000;}.heroe::after,.guia,.redes,.botones,.barra,.flechas,.pestanas,.estrella,.rejilla{display:none!important;}
+    .figura{width:120px;height:150px;margin:0;}.heroe-grid{grid-template-columns:140px 1fr;gap:24px;padding:0 0 16px;align-items:start;}.texto-heroe .intro,.texto-heroe .intro strong,.contacto-linea{color:#000;}
+    .rejilla-proy[hidden]{display:grid!important;}
+    .pista{display:block;overflow:visible;}.pub,.proy,.tarjeta{break-inside:avoid;margin-bottom:10px;border-color:#ccc;}
+    .bloque{padding:24px 0;}.cierre{background:none;color:#000;padding:24px 0;}.cierre p,.cierre blockquote{color:#000;}footer{display:none;}
   }
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
-  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
 </style>
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
-<div class="envoltura">
-  <header>
-    <h1>Leonar.Socarras</h1>
-    <p class="titulo">Docente-investigador en inteligencia artificial aplicada a la educación, STEM y Diseño Universal para el Aprendizaje</p>
-    <p class="lugar">Valledupar, Cesar, Colombia</p>
-    <nav class="enlaces" aria-label="Perfiles">
-      <a class="ext" href="https://github.com/leonar-socarras" target="_blank" rel="noopener">GitHub</a>
-      <a class="ext" href="https://www.linkedin.com/in/leonarsocarrasmolina/" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="ext" href="https://orcid.org/0000-0003-0601-9151" target="_blank" rel="noopener">ORCID</a>
-      <a href="mailto:leonarsomo@unisabana.edu.co">Correo</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-estrella" viewBox="0 0 100 100"><path d="M50 0 C53 40 60 47 100 50 C60 53 53 60 50 100 C47 60 40 53 0 50 C40 47 47 40 50 0Z"/></symbol>
+    <symbol id="i-correo" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.2V17h16V7.2l-8 5.3-8-5.3zM5.3 7l6.7 4.4L18.7 7H5.3z"/></symbol>
+    <symbol id="i-lugar" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 0 1 7-7zm0 4.5A2.5 2.5 0 1 0 12 11.5 2.5 2.5 0 0 0 12 6.5z"/></symbol>
+    <symbol id="i-maletin" viewBox="0 0 24 24"><path d="M9 3h6a2 2 0 0 1 2 2v1h4a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h4V5a2 2 0 0 1 2-2zm0 3h6V5H9v1z"/></symbol>
+    <symbol id="i-birrete" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.8-7-3.8z"/></symbol>
+  </defs>
+</svg>
+
+<header class="heroe" id="inicio">
+  <div class="envoltura">
+    <nav class="barra" aria-label="Principal">
+      <a class="marca" href="#inicio">Leonar.Socarras</a>
+      <button class="abrir-menu" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+      <ul class="menu" id="menu">
+        <li><a href="#sobre">Sobre mí</a></li>
+        <li><a href="#lineas">Investigación</a></li>
+        <li><a href="#publicaciones">Publicaciones</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#trayectoria">Trayectoria</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
-    <div class="segmentos" role="tablist" aria-label="Secciones del sitio">
-      <button role="tab" id="tab-perfil" aria-controls="panel-perfil" aria-selected="true">Perfil</button>
-      <button role="tab" id="tab-investigacion" aria-controls="panel-investigacion" aria-selected="false" tabindex="-1">Investigación</button>
-      <button role="tab" id="tab-trayectoria" aria-controls="panel-trayectoria" aria-selected="false" tabindex="-1">Trayectoria</button>
+    <div class="heroe-grid">
+      <div class="figura">
+        <svg class="estrella grande" aria-hidden="true"><use href="#i-estrella"/></svg>
+        <div class="rejilla" aria-hidden="true"></div>
+        <div class="arco"><img src="img/leonar-socarras.jpg" alt="Leonar Socarrás Molina en el campus universitario" width="760" height="940"></div>
+      </div>
+      <div class="texto-heroe">
+        <h1>Inteligencia artificial al servicio de la educación</h1>
+        <p class="intro">Hola, soy <strong>Leonar Socarrás Molina, PhD</strong>, docente-investigador en <strong>IA aplicada a la educación, STEM y Diseño Universal para el Aprendizaje</strong>. Trabajo para que la tecnología llegue con sentido a las aulas más diversas y vulnerables del Caribe colombiano.</p>
+        <ul class="redes" aria-label="Perfiles">
+          <li><a href="https://github.com/leonar-socarras" target="_blank" rel="noopener" aria-label="GitHub">GH</a></li>
+          <li><a href="https://www.linkedin.com/in/leonarsocarrasmolina/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></li>
+          <li><a href="https://orcid.org/0000-0003-0601-9151" target="_blank" rel="noopener" aria-label="ORCID">iD</a></li>
+        </ul>
+        <ul class="contacto-linea">
+          <li><svg aria-hidden="true"><use href="#i-correo"/></svg><a href="mailto:leonarsomo@unisabana.edu.co">leonarsomo@unisabana.edu.co</a></li>
+          <li><svg aria-hidden="true"><use href="#i-lugar"/></svg>Valledupar, Cesar, Colombia</li>
+        </ul>
+        <div class="botones">
+          <a class="btn btn-oro" href="#lineas">Mi investigación</a>
+          <a class="btn btn-blanco" href="#contacto">Contáctame</a>
+        </div>
+      </div>
     </div>
-    <button class="todo" type="button" aria-pressed="false">Expandir todo</button>
-  </header>
-  <main id="contenido">
-  <div class="panel" id="panel-perfil" role="tabpanel" aria-labelledby="tab-perfil" tabindex="-1">
-  <details class="acordeon" id="sobre" open>
-    <summary><h2>Sobre mí</h2><span class="icono" aria-hidden="true"></span></summary>
-    <div class="cuerpo">
-      <p>Soy ingeniero de sistemas, docente e investigador colombiano. Mi formación reúne ingeniería, educación y gestión: Doctor en Ciencias, mención Gerencia, con estancia postdoctoral en Gerencia de la Ciencia y la Tecnología, y recién culminado el Doctorado en Ciencias de la Educación. Actualmente curso la Maestría en Inteligencia Artificial de la Universidad de La Sabana.</p>
-      <p>Investigo la intersección entre inteligencia artificial, educación y transformación social, con énfasis en modelos STEM, pensamiento computacional y Diseño Universal para el Aprendizaje en contextos educativos diversos y vulnerables. Trabajo desde paradigmas constructivistas, sociocríticos y humanistas, buscando conocimiento aplicado con impacto en el aula.</p>
-      <p>Estoy abierto a colaboraciones internacionales, redes de investigación y estancias postdoctorales.</p>
+  </div>
+  <div class="guia" aria-hidden="true"><i></i><svg><use href="#i-estrella"/></svg></div>
+</header>
+
+<main id="contenido" class="claro">
+  <section class="bloque alt" id="sobre">
+    <div class="envoltura sobre">
+      <div>
+        <h2 class="titulo-bloque">Sobre mí</h2>
+        <p>Soy ingeniero de sistemas, docente e investigador colombiano. Mi formación reúne ingeniería, educación y gestión: Doctor en Ciencias, mención Gerencia, con estancia postdoctoral en Gerencia de la Ciencia y la Tecnología, y recién culminado el Doctorado en Ciencias de la Educación. Actualmente curso la Maestría en Inteligencia Artificial de la Universidad de La Sabana.</p>
+        <p>Investigo la intersección entre inteligencia artificial, educación y transformación social, con énfasis en modelos STEM, pensamiento computacional y Diseño Universal para el Aprendizaje en contextos diversos y vulnerables. Trabajo desde paradigmas constructivistas, sociocríticos y humanistas, buscando conocimiento aplicado con impacto en el aula.</p>
+      </div>
+      <dl class="cifras">
+        <div><dt>20+</dt><dd>años de experiencia en ingeniería y docencia</dd></div>
+        <div><dt>8</dt><dd>publicaciones científicas</dd></div>
+        <div><dt>15</dt><dd>proyectos de investigación e innovación</dd></div>
+        <div><dt>2</dt><dd>doctorados en gerencia y educación</dd></div>
+      </dl>
     </div>
-  </details>
-  <details class="acordeon" id="lineas">
-    <summary><h2>Líneas de investigación</h2><span class="cuenta">6</span><span class="icono" aria-hidden="true"></span></summary>
-    <div class="cuerpo">
-      <ul>
-        <li>Inteligencia artificial en educación. <span class="d">Co-inteligencia docente-IA, agencia epistémica del estudiante y uso ético de la IA en el aula.</span></li>
-        <li>Educación STEM y pensamiento computacional. <span class="d">Robótica, sensores y ciencia ciudadana en la educación secundaria.</span></li>
-        <li>Diseño Universal para el Aprendizaje e inclusión. <span class="d">Modelos inclusivos para estudiantes diversos y neurodivergentes.</span></li>
-        <li>Ciencia de datos y procesamiento de lenguaje natural. <span class="d">Analítica del aprendizaje y análisis de la escritura de estudiantes.</span></li>
-        <li>Aprendizaje por refuerzo y aprendizaje profundo. <span class="d">Q-Learning, DQN y transferencia con modelos preentrenados.</span></li>
-        <li>Innovación educativa e investigación-acción participativa. <span class="d">Transformación de prácticas pedagógicas desde la escuela.</span></li>
+  </section>
+
+  <section class="bloque" id="lineas">
+    <div class="envoltura">
+      <div class="cabeza">
+        <div>
+          <h2 class="titulo-bloque">Líneas de investigación</h2>
+          <p class="bajada">Cada escuela, por pequeña o apartada que sea, merece acceso a una educación mediada por tecnología con sentido humano.</p>
+        </div>
+        <a class="btn btn-azul" href="#contacto">Colaboremos</a>
+      </div>
+      <div class="tarjetas">
+        <article class="tarjeta"><svg aria-hidden="true"><use href="#i-estrella"/></svg><h3>Inteligencia artificial en educación</h3><p>Co-inteligencia docente-IA, agencia epistémica del estudiante y uso ético de la IA en el aula.</p></article>
+        <article class="tarjeta"><svg aria-hidden="true"><use href="#i-estrella"/></svg><h3>Educación STEM y pensamiento computacional</h3><p>Robótica, sensores y ciencia ciudadana en la educación secundaria.</p></article>
+        <article class="tarjeta"><svg aria-hidden="true"><use href="#i-estrella"/></svg><h3>Diseño Universal para el Aprendizaje</h3><p>Modelos inclusivos para estudiantes diversos y neurodivergentes.</p></article>
+        <article class="tarjeta"><svg aria-hidden="true"><use href="#i-estrella"/></svg><h3>Ciencia de datos y PLN</h3><p>Analítica del aprendizaje y análisis de la escritura de estudiantes.</p></article>
+        <article class="tarjeta"><svg aria-hidden="true"><use href="#i-estrella"/></svg><h3>Aprendizaje por refuerzo y profundo</h3><p>Q-Learning, DQN y transferencia con modelos preentrenados.</p></article>
+        <article class="tarjeta"><svg aria-hidden="true"><use href="#i-estrella"/></svg><h3>Innovación e investigación-acción</h3><p>Transformación de prácticas pedagógicas desde la escuela, con la comunidad.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque alt" id="publicaciones">
+    <div class="envoltura">
+      <div class="cabeza">
+        <div>
+          <h2 class="titulo-bloque">Publicaciones</h2>
+          <p class="bajada">Artículos y capítulos registrados en <a href="https://orcid.org/0000-0003-0601-9151" target="_blank" rel="noopener">ORCID</a>.</p>
+        </div>
+        <div class="flechas"><button type="button" data-dir="-1" aria-label="Publicaciones anteriores">&larr;</button><button type="button" data-dir="1" aria-label="Publicaciones siguientes">&rarr;</button></div>
+      </div>
+      <div class="pista" tabindex="0" aria-label="Lista de publicaciones, desplazable">
+        <article class="pub"><span class="anio">2026</span><h3>El Modelo STEM-DUA 3.0. Fundamentos, arquitectura, dispositivos operativos y condiciones de réplica de una matriz de innovación inclusiva para la enseñanza de las matemáticas en contextos de alta vulnerabilidad</h3><p class="revista">Ciencia Latina Revista Científica Multidisciplinar, 10(4)</p><a href="https://doi.org/10.37811/cl_rcm.v10i4.25549" target="_blank" rel="noopener">Leer artículo (DOI) &rarr;</a></article>
+        <article class="pub"><span class="anio">2026</span><h3>Mediación tecnológica situada para la enseñanza de las matemáticas en contextos de precariedad conectiva</h3><p class="revista">Revista Multidisciplinar Epistemología de las Ciencias</p><a href="https://doi.org/10.71112/f8j6jp93" target="_blank" rel="noopener">Leer artículo (DOI) &rarr;</a></article>
+        <article class="pub"><span class="anio">2025</span><h3>Gestión del conocimiento en la educación: estrategias innovadoras para la gerencia educativa</h3><p class="revista">SUMMA, 7(2)</p><a href="https://doi.org/10.47666/summa.7.2.10" target="_blank" rel="noopener">Leer artículo (DOI) &rarr;</a></article>
+        <article class="pub"><span class="anio">2022</span><h3>Captura de datos bajo software libre para un quadcopter de tipo Crazyflie como herramienta a un modelado matemático preciso en tiempos de COVID-19</h3><p class="revista">Télematique. Revista Electrónica de Estudios Telemáticos</p><a href="https://dialnet.unirioja.es/servlet/articulo?codigo=8578121" target="_blank" rel="noopener">Ver en Dialnet &rarr;</a></article>
+        <article class="pub"><span class="anio">2021</span><h3>Innovación abierta basada en la gestión del conocimiento para ser aplicado en empresas de telecomunicaciones</h3><p class="revista">SUMMA. Revista disciplinaria en ciencias económicas y sociales, 3(2)</p><a href="https://doi.org/10.47666/summa.3.2.39" target="_blank" rel="noopener">Leer artículo (DOI) &rarr;</a></article>
+        <article class="pub"><span class="anio">2020</span><h3>Plan de mantenimiento predictivo empleando termografía para una línea de producción de una empresa de desinfectantes</h3><p class="revista">REDIELUZ, Universidad del Zulia</p><a href="https://produccioncientificaluz.org/index.php/redieluz/article/view/33272" target="_blank" rel="noopener">Leer artículo &rarr;</a></article>
+        <article class="pub"><span class="anio">2020</span><h3>Control en cascada para las variables de nivel y flujo en una planta piloto</h3><p class="revista">INGENIUM, Centro Tecnológico de Investigación y Consultoría en Ingeniería</p></article>
+        <article class="pub"><span class="anio">2020</span><h3>Robot híbrido para inspecciones y mantenimiento de paneles solares fotovoltaicos</h3><p class="revista">INGENIUM, Centro Tecnológico de Investigación y Consultoría en Ingeniería</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque" id="proyectos">
+    <div class="envoltura">
+      <div class="cabeza"><div>
+        <h2 class="titulo-bloque">Proyectos</h2>
+        <p class="bajada">Investigación doctoral y postdoctoral, innovación STEM en el aula y código abierto.</p>
+      </div></div>
+      <div class="pestanas" role="tablist" aria-label="Tipo de proyecto">
+        <button role="tab" id="t-inv" aria-controls="p-inv" aria-selected="true">Investigación<span class="n">7</span></button>
+        <button role="tab" id="t-stem" aria-controls="p-stem" aria-selected="false" tabindex="-1">Innovación STEM<span class="n">8</span></button>
+        <button role="tab" id="t-repo" aria-controls="p-repo" aria-selected="false" tabindex="-1">Repositorios<span class="n">4</span></button>
+      </div>
+      <div class="rejilla-proy" id="p-inv" role="tabpanel" aria-labelledby="t-inv">
+        <article class="proy"><span class="estado">En curso</span><h3>Gerencia sentipensante de la evaluación del desempeño profesoral</h3><p class="marco">Postdoctorado en Gerencia de la Educación Superior, URBE</p><p>Estudio hermenéutico-dialéctico sobre cómo se evalúa al profesorado universitario, con círculos de validación del constructo junto a los propios actores.</p></article>
+        <article class="proy"><span class="estado">Culminada</span><h3>Innovación inclusiva en la enseñanza de las matemáticas mediante STEM y DUA</h3><p class="marco">Tesis de maestría, Fundación Universitaria del Área Andina</p><p>Investigación-acción participativa en matemáticas de grado séptimo que dio origen al Modelo STEM-DUA 3.0.</p></article>
+        <article class="proy"><span class="estado">Culminado</span><h3>Pensar y sentir las matemáticas en el Caribe</h3><p class="marco">Estado del conocimiento</p><p>Revisión sistemática con PRISMA, SPIDER y GRADE-CERQual, con análisis bibliométrico en R.</p></article>
+        <article class="proy"><span class="estado">Diseñado</span><h3>Co-inteligencia y frontera dentada</h3><p class="marco">Programa de investigación escolar</p><p>Tres estudios sobre el trabajo conjunto entre estudiantes e IA en los grados octavos de la IE Manuel Germán Cuello Gutiérrez.</p></article>
+        <article class="proy"><span class="estado">En formulación</span><h3>Cerebro digital de la organización escolar</h3><p class="marco">Propuesta posdoctoral</p><p>Grafo de conocimiento organizacional y gobernanza del contexto con IA, replicable en instituciones educativas oficiales mediante un modelo de lenguaje pequeño.</p></article>
+        <article class="proy"><span class="estado">En curso</span><h3>Índice de novedad evolutiva en diseño genómico generativo</h3><p class="marco">Maestría en IA y postdoctorado</p><p>Construcción de un índice cuantitativo de novedad para genomas de bacteriófagos diseñados con los modelos Evo.</p></article>
+        <article class="proy"><span class="estado">En desarrollo</span><h3>Marco Integral de Gobernanza para la Escritura Académica Asistida por IA</h3><p class="marco">Marco propio</p><p>Diez capítulos de gobernanza epistemológica, metodológica, ética y de la evidencia, con auditorías, indicadores y listas de chequeo.</p></article>
+      </div>
+      <div class="rejilla-proy" id="p-stem" role="tabpanel" aria-labelledby="t-stem" hidden>
+        <article class="proy"><span class="estado">Prototipo</span><h3>Cauce Vivo</h3><p class="marco">Ciencia ciudadana</p><p>Monitoreo del río Cesar con una red de cuatro estaciones ESP32, backend en Node.js y SQLite, y un tablero web con índice de calidad del agua anclado a la norma colombiana.</p></article>
+        <article class="proy"><span class="estado">Propuesta</span><h3>Pulso Vivo</h3><p class="marco">Samsung Solve for Tomorrow 2026</p><p>Monitoreo fisiológico con wearables (micro:bit y ESP32) para la educación física en grado décimo, con Design Thinking y enfoque DUA.</p></article>
+        <article class="proy"><span class="estado">En desarrollo</span><h3>Senda Matemática</h3><p class="marco">Software educativo</p><p>Aplicación web sin conexión para matemáticas de grados 6 a 11, organizada por los cinco pensamientos matemáticos, con apoyos DUA y actividades H5P.</p></article>
+        <article class="proy"><span class="estado">En diseño</span><h3>Jui</h3><p class="marco">Juego educativo</p><p>Juego multijugador de estrategia económica ambientado en la antigua Magdalena Grande, para enseñar probabilidad, proporciones y economía desde la reciprocidad.</p></article>
+        <article class="proy"><span class="estado">En desarrollo</span><h3>Mi Invernadero</h3><p class="marco">Aplicación móvil</p><p>App en MIT App Inventor conectada por Firebase a un invernadero simulado en Tinkercad con Arduino: riego, ventilación, iluminación y sensores.</p></article>
+        <article class="proy"><span class="estado">En implementación</span><h3>Termómetro digital con alarma</h3><p class="marco">Proyecto STEM de aula</p><p>Arduino UNO, sensor DHT11, pantalla LCD y alarmas visuales y sonoras, documentado bajo el enfoque TPACK.</p></article>
+        <article class="proy"><span class="estado">En diseño</span><h3>Agricultura inteligente con IA embebida</h3><p class="marco">Sistema IoT</p><p>ESP32 con TinyML y Raspberry Pi con un agente de IA que monitorea el cultivo, controla riego, nutrición y energía, y emite alertas tempranas.</p></article>
+        <article class="proy"><span class="estado">En uso</span><h3>Guías de tecnología para adultos</h3><p class="marco">Bachillerato sabatino para adultos</p><p>Guías semanales sobre hardware, historia de la computación, herramientas digitales y el ecosistema de IA de Google.</p></article>
+      </div>
+      <div class="rejilla-proy" id="p-repo" role="tabpanel" aria-labelledby="t-repo" hidden>
+        <a class="proy" href="https://github.com/leonar-socarras/flores-proyecto-integrador" target="_blank" rel="noopener"><span class="estado">Jupyter</span><h3>flores-proyecto-integrador &nearr;</h3><p class="marco">Maestría en IA, U. de La Sabana</p><p>Clasificación de cinco flores con partición sin fuga, líneas base y transferencia desde DINOv2.</p></a>
+        <a class="proy" href="https://github.com/leonar-socarras/rl_games_v2" target="_blank" rel="noopener"><span class="estado">Python</span><h3>rl_games_v2 &nearr;</h3><p class="marco">Aprendizaje por refuerzo</p><p>Q-Learning y DQN mejorados sobre Gymnasium, con simulador HTML5.</p></a>
+        <a class="proy" href="https://github.com/leonar-socarras/mountain_car" target="_blank" rel="noopener"><span class="estado">Python</span><h3>mountain_car &nearr;</h3><p class="marco">Aprendizaje por refuerzo</p><p>Q-Learning tabular frente a DQN en MountainCar-v0, con visualizaciones y pruebas automatizadas.</p></a>
+        <a class="proy" href="https://github.com/leonar-socarras/pong_dqn" target="_blank" rel="noopener"><span class="estado">Python</span><h3>pong_dqn &nearr;</h3><p class="marco">Simulación y Aprendizaje por Refuerzo</p><p>DQN que aprende a jugar Pong desde píxeles.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque alt" id="trayectoria">
+    <div class="envoltura">
+      <div class="cabeza"><div><h2 class="titulo-bloque">Trayectoria</h2><p class="bajada">Casi tres décadas entre la industria, la formación técnica y el aula.</p></div></div>
+      <div class="dos">
+        <div>
+          <h3 class="sub"><svg aria-hidden="true"><use href="#i-maletin"/></svg>Experiencia</h3>
+          <ul class="linea-tiempo">
+            <li><span class="cuando">2015 A HOY</span><strong>Docente-investigador, IE Manuel Germán Cuello Gutiérrez, Valledupar</strong><span class="d">Tecnología e Informática, Estadística y Álgebra; IA, STEM, pensamiento computacional, DUA e investigación-acción participativa.</span></li>
+            <li><span class="cuando">2009 A 2015</span><strong>Instructor, SENA</strong><span class="d">Análisis y desarrollo de sistemas de información, programación de software y 3D.</span></li>
+            <li><span class="cuando">DESDE 2000</span><strong>Analista de distribución, datos y procesos, Coca-Cola FEMSA</strong><span class="d">Análisis de datos operativos y optimización de procesos logísticos.</span></li>
+            <li><span class="cuando">1997 A 2000</span><strong>Analista de sistemas, Alpina</strong><span class="d">Administración y mantenimiento del sistema de información.</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sub"><svg aria-hidden="true"><use href="#i-birrete"/></svg>Formación académica</h3>
+          <ul class="linea-tiempo">
+            <li><span class="cuando">2026</span><strong>Doctorado en Ciencias de la Educación, URBE</strong><span class="d">Tesis aprobada con calificación Excelente; grado en trámite.</span></li>
+            <li><span class="cuando">EN CURSO</span><strong>Maestría en Inteligencia Artificial, Universidad de La Sabana</strong></li>
+            <li><span class="cuando">2026</span><strong>Maestría en Educación para la Innovación Pedagógica, AREANDINA</strong><span class="d">Culminada, en espera de grado.</span></li>
+            <li><span class="cuando">2025</span><strong>Postdoctorado en Gerencia de la Ciencia y la Tecnología, URBE</strong></li>
+            <li><span class="cuando">2023</span><strong>Doctor en Ciencias, mención Gerencia, URBE</strong></li>
+            <li><span class="cuando">2020</span><strong>Maestría en Ingeniería de Control y Automatización de Procesos, URBE</strong></li>
+            <li><span class="cuando">2021 A 2026</span><strong>Especializaciones en Pedagogía e Investigación en el Aula (La Sabana), Pedagogía y Docencia, e Informática Educativa (AREANDINA)</strong></li>
+            <li><span class="cuando">2000</span><strong>Ingeniería de Sistemas, Universidad de Santander</strong></li>
+          </ul>
+          <p class="nota">Además: diplomados de la Universidad de La Sabana en IA con Deep Learning, Big Data y Power BI, STEM y DUA; curso en la Universitat Politècnica de València (2026); especializaciones tecnológicas del SENA en Bases de Datos y Web Master.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque" id="habilidades">
+    <div class="envoltura">
+      <div class="cabeza"><div><h2 class="titulo-bloque">Habilidades técnicas</h2></div></div>
+      <ul class="chips">
+        <li>Python</li><li>NumPy y Pandas</li><li>Scikit-learn</li><li>Gymnasium</li><li>Machine learning</li><li>Deep learning</li><li>Aprendizaje por refuerzo</li><li>PLN</li><li>R y SPSS</li><li>Investigación cualitativa y cuantitativa</li><li>Power BI</li><li>SQL y big data</li><li>Jupyter y Colab</li><li>Git y GitHub</li><li>Arduino y ESP32</li><li>micro:bit</li><li>MATLAB y LabVIEW</li><li>PLC</li>
       </ul>
     </div>
-  </details>
-  <details class="acordeon" id="habilidades">
-    <summary><h2>Habilidades técnicas</h2><span class="icono" aria-hidden="true"></span></summary>
-    <div class="cuerpo">
-      <p>Python, NumPy, Pandas, Scikit-learn y Gymnasium; machine learning, deep learning, aprendizaje por refuerzo y procesamiento de lenguaje natural; R, SPSS y métodos de investigación cualitativa y cuantitativa; Power BI, SQL y big data; Jupyter, Google Colab, Git y GitHub; Arduino, ESP32 y micro:bit; MATLAB, LabVIEW y PLC.</p>
+  </section>
+
+  <section class="bloque alt" aria-labelledby="t-inst">
+    <div class="envoltura">
+      <div class="cabeza" style="justify-content:center;text-align:center"><div><h2 class="titulo-bloque" id="t-inst">Instituciones en mi camino</h2><p class="bajada">Universidades y entidades donde me he formado y he trabajado.</p></div></div>
+      <ul class="instituciones">
+        <li>Universidad de La Sabana</li><li>Universidad Rafael Belloso Chacín</li><li>Fundación Universitaria del Área Andina</li><li>SENA</li><li>IE Manuel Germán Cuello Gutiérrez</li>
+      </ul>
     </div>
-  </details>
-  <details class="acordeon" id="vision">
-    <summary><h2>Visión</h2><span class="icono" aria-hidden="true"></span></summary>
-    <div class="cuerpo">
+  </section>
+</main>
+
+<section class="cierre" id="contacto">
+  <svg class="estrella" aria-hidden="true"><use href="#i-estrella"/></svg>
+  <div class="envoltura">
+    <div>
+      <h2>¿Investigamos juntos?</h2>
+      <p>Estoy abierto a colaboraciones internacionales, redes de investigación y estancias postdoctorales.</p>
       <blockquote>La educación, la ciencia y la tecnología deben converger para construir una sociedad más justa, inclusiva y consciente.</blockquote>
     </div>
-  </details>
+    <div class="botones">
+      <a class="btn btn-oro" href="mailto:leonarsomo@unisabana.edu.co">Escríbeme</a>
+      <a class="btn btn-blanco" href="https://www.linkedin.com/in/leonarsocarrasmolina/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
   </div>
-  <div class="panel" id="panel-investigacion" role="tabpanel" aria-labelledby="tab-investigacion" tabindex="-1">
-  <details class="acordeon" id="publicaciones" open>
-    <summary><h2>Publicaciones</h2><span class="cuenta">8</span><span class="icono" aria-hidden="true"></span></summary>
-    <div class="cuerpo">
-      <ul class="crono pubs">
-        <li><span>El Modelo STEM-DUA 3.0. Fundamentos, arquitectura, dispositivos operativos y condiciones de réplica de una matriz de innovación inclusiva para la enseñanza de las matemáticas en contextos de alta vulnerabilidad<span class="d">Ciencia Latina Revista Científica Multidisciplinar, 10(4). <a class="ext" href="https://doi.org/10.37811/cl_rcm.v10i4.25549" target="_blank" rel="noopener">DOI</a></span></span><span class="a">2026</span></li>
-        <li><span>Mediación tecnológica situada para la enseñanza de las matemáticas en contextos de precariedad conectiva<span class="d">Revista Multidisciplinar Epistemología de las Ciencias. <a class="ext" href="https://doi.org/10.71112/f8j6jp93" target="_blank" rel="noopener">DOI</a></span></span><span class="a">2026</span></li>
-        <li><span>Gestión del conocimiento en la educación: estrategias innovadoras para la gerencia educativa<span class="d">SUMMA, 7(2). <a class="ext" href="https://doi.org/10.47666/summa.7.2.10" target="_blank" rel="noopener">DOI</a></span></span><span class="a">2025</span></li>
-        <li><span>Captura de datos bajo software libre para un quadcopter de tipo Crazyflie como herramienta a un modelado matemático preciso en tiempos de COVID-19<span class="d">Télematique. Revista Electrónica de Estudios Telemáticos. <a class="ext" href="https://dialnet.unirioja.es/servlet/articulo?codigo=8578121" target="_blank" rel="noopener">Dialnet</a></span></span><span class="a">2022</span></li>
-        <li><span>Innovación abierta basada en la gestión del conocimiento para ser aplicado en empresas de telecomunicaciones<span class="d">SUMMA. Revista disciplinaria en ciencias económicas y sociales, 3(2). <a class="ext" href="https://doi.org/10.47666/summa.3.2.39" target="_blank" rel="noopener">DOI</a></span></span><span class="a">2021</span></li>
-        <li><span>Plan de mantenimiento predictivo empleando termografía para una línea de producción de una empresa de desinfectantes<span class="d">REDIELUZ, Universidad del Zulia. <a class="ext" href="https://produccioncientificaluz.org/index.php/redieluz/article/view/33272" target="_blank" rel="noopener">Artículo</a></span></span><span class="a">2020</span></li>
-        <li><span>Control en cascada para las variables de nivel y flujo en una planta piloto<span class="d">INGENIUM, Centro Tecnológico de Investigación y Consultoría en Ingeniería.</span></span><span class="a">2020</span></li>
-        <li><span>Robot híbrido para inspecciones y mantenimiento de paneles solares fotovoltaicos<span class="d">INGENIUM, Centro Tecnológico de Investigación y Consultoría en Ingeniería.</span></span><span class="a">2020</span></li>
-      </ul>
-      <p class="nota">Registro completo y actualizado en <a class="ext" href="https://orcid.org/0000-0003-0601-9151" target="_blank" rel="noopener">ORCID</a>.</p>
-    </div>
-  </details>
-  <details class="acordeon" id="proyectos">
-    <summary><h2>Proyectos de investigación</h2><span class="cuenta">7</span><span class="icono" aria-hidden="true"></span></summary>
-    <div class="cuerpo">
-      <div class="proyectos">
-        <div class="proyecto fijo"><h3>Gerencia sentipensante de la evaluación del desempeño profesoral</h3><p class="tipo">Postdoctorado en Gerencia de la Educación Superior, URBE · en curso</p><p>Estudio hermenéutico-dialéctico sobre cómo se evalúa al profesorado universitario, con círculos de validación del constructo junto a los propios actores.</p></div>
-        <div class="proyecto fijo"><h3>Innovación inclusiva en la enseñanza de las matemáticas mediante STEM y DUA</h3><p class="tipo">Tesis de maestría, Fundación Universitaria del Área Andina · culminada</p><p>Investigación-acción participativa en matemáticas de grado séptimo que dio origen al Modelo STEM-DUA 3.0.</p></div>
-        <div class="proyecto fijo"><h3>Pensar y sentir las matemáticas en el Caribe</h3><p class="tipo">Estado del conocimiento · culminado</p><p>Revisión sistemática con PRISMA, SPIDER y GRADE-CERQual, con análisis bibliométrico en R.</p></div>
-        <div class="proyecto fijo"><h3>Co-inteligencia y frontera dentada</h3><p class="tipo">Programa de investigación escolar · diseñado</p><p>Tres estudios sobre el trabajo conjunto entre estudiantes e IA en los grados octavos de la IE Manuel Germán Cuello Gutiérrez, con matriz de hipótesis, protocolo ético y cronograma de veinte semanas.</p></div>
-        <div class="proyecto fijo"><h3>Cerebro digital de la organización escolar</h3><p class="tipo">Propuesta posdoctoral · en formulación</p><p>Grafo de conocimiento organizacional y gobernanza del contexto con IA, planteado como marco replicable en instituciones educativas oficiales de Valledupar mediante un modelo de lenguaje pequeño.</p></div>
-        <div class="proyecto fijo"><h3>Índice de novedad evolutiva en diseño genómico generativo</h3><p class="tipo">Maestría en IA y postdoctorado · en curso</p><p>Construcción de un índice cuantitativo de novedad para genomas de bacteriófagos diseñados con los modelos Evo.</p></div>
-        <div class="proyecto fijo"><h3>Marco Integral de Gobernanza para la Escritura Académica Asistida por IA</h3><p class="tipo">Marco propio · en desarrollo</p><p>Diez capítulos de gobernanza epistemológica, metodológica, argumentativa, lingüística, ética y de la evidencia, con auditorías, indicadores y listas de chequeo.</p></div>
-      </div>
-    </div>
-  </details>
-  <details class="acordeon" id="innovacion">
-    <summary><h2>Innovación STEM y tecnología educativa</h2><span class="cuenta">8</span><span class="icono" aria-hidden="true"></span></summary>
-    <div class="cuerpo">
-      <div class="proyectos">
-        <div class="proyecto fijo"><h3>Cauce Vivo</h3><p class="tipo">Ciencia ciudadana · prototipo</p><p>Monitoreo del río Cesar: red de cuatro estaciones con ESP32, backend en Node.js y SQLite, y tablero web progresivo con un índice de calidad del agua anclado a la norma colombiana.</p></div>
-        <div class="proyecto fijo"><h3>Pulso Vivo</h3><p class="tipo">Samsung Solve for Tomorrow 2026 · propuesta</p><p>Monitoreo fisiológico con wearables (micro:bit y ESP32) para la educación física en grado décimo, con Design Thinking y enfoque DUA.</p></div>
-        <div class="proyecto fijo"><h3>Senda Matemática</h3><p class="tipo">Software educativo · en desarrollo</p><p>Aplicación web progresiva y sin conexión para matemáticas de grados 6 a 11, organizada por los cinco pensamientos matemáticos, con apoyos DUA y exportación de actividades H5P.</p></div>
-        <div class="proyecto fijo"><h3>Jui</h3><p class="tipo">Juego educativo · en diseño</p><p>Juego multijugador de estrategia económica ambientado en la antigua Magdalena Grande, para enseñar probabilidad, proporciones y economía desde la reciprocidad y no la acumulación.</p></div>
-        <div class="proyecto fijo"><h3>Mi Invernadero</h3><p class="tipo">Aplicación móvil · en desarrollo</p><p>App en MIT App Inventor conectada por Firebase a un invernadero simulado en Tinkercad con Arduino: riego, ventilación, iluminación y sensores.</p></div>
-        <div class="proyecto fijo"><h3>Termómetro digital con alarma</h3><p class="tipo">Proyecto STEM de aula · en implementación</p><p>Arduino UNO, sensor DHT11, pantalla LCD y alarmas visuales y sonoras, documentado bajo el enfoque TPACK y base de un artículo de revisión en preparación.</p></div>
-        <div class="proyecto fijo"><h3>Agricultura inteligente con IA embebida</h3><p class="tipo">Sistema IoT · en diseño</p><p>ESP32 con TinyML y Raspberry Pi con un agente de IA que monitorea el cultivo, controla riego, nutrición y energía, y emite alertas tempranas; incluye visión artificial del crecimiento de la planta.</p></div>
-        <div class="proyecto fijo"><h3>Guías de tecnología para adultos</h3><p class="tipo">Bachillerato sabatino para adultos · en uso</p><p>Guías semanales autocontenidas sobre hardware, historia de la computación, herramientas digitales y el ecosistema de IA de Google.</p></div>
-      </div>
-    </div>
-  </details>
-  <details class="acordeon" id="repositorios">
-    <summary><h2>Repositorios</h2><span class="cuenta">4</span><span class="icono" aria-hidden="true"></span></summary>
-    <div class="cuerpo">
-      <div class="proyectos">
-        <a class="proyecto" href="https://github.com/leonar-socarras/flores-proyecto-integrador" target="_blank" rel="noopener"><h3 class="ext">flores-proyecto-integrador</h3><p>Clasificación de cinco flores (tf_flowers) con partición sin fuga, líneas base y transferencia desde DINOv2. Proyecto integrador, Maestría en IA, U. de La Sabana.</p></a>
-        <a class="proyecto" href="https://github.com/leonar-socarras/rl_games_v2" target="_blank" rel="noopener"><h3 class="ext">rl_games_v2</h3><p>Laboratorio de aprendizaje por refuerzo: Q-Learning y DQN mejorados sobre Gymnasium, con simulador HTML5.</p></a>
-        <a class="proyecto" href="https://github.com/leonar-socarras/mountain_car" target="_blank" rel="noopener"><h3 class="ext">mountain_car</h3><p>Q-Learning tabular frente a DQN en MountainCar-v0, con exploración persistente, modelos entrenados, visualizaciones y pruebas automatizadas.</p></a>
-        <a class="proyecto" href="https://github.com/leonar-socarras/pong_dqn" target="_blank" rel="noopener"><h3 class="ext">pong_dqn</h3><p>DQN que aprende a jugar Pong desde píxeles. Taller de Simulación y Aprendizaje por Refuerzo.</p></a>
-      </div>
-    </div>
-  </details>
-  </div>
-  <div class="panel" id="panel-trayectoria" role="tabpanel" aria-labelledby="tab-trayectoria" tabindex="-1">
-  <details class="acordeon" id="experiencia" open>
-    <summary><h2>Experiencia</h2><span class="cuenta">4</span><span class="icono" aria-hidden="true"></span></summary>
-    <div class="cuerpo">
-      <ul class="crono">
-        <li><span>Docente-investigador, IE Manuel Germán Cuello Gutiérrez, Valledupar<span class="d">Tecnología e Informática, Estadística y Álgebra; IA y enfoque STEM, pensamiento computacional, DUA e investigación-acción participativa.</span></span><span class="a">2015 a hoy</span></li>
-        <li><span>Instructor, SENA<span class="d">Análisis y desarrollo de sistemas de información, programación de software y 3D.</span></span><span class="a">2009 a 2015</span></li>
-        <li><span>Analista de distribución, datos y procesos, Coca-Cola FEMSA<span class="d">Análisis de datos operativos y optimización de procesos logísticos.</span></span><span class="a">desde 2000</span></li>
-        <li><span>Analista de sistemas, Alpina<span class="d">Administración y mantenimiento del sistema de información.</span></span><span class="a">1997 a 2000</span></li>
-      </ul>
-    </div>
-  </details>
-  <details class="acordeon" id="formacion">
-    <summary><h2>Formación académica</h2><span class="cuenta">10</span><span class="icono" aria-hidden="true"></span></summary>
-    <div class="cuerpo">
-      <ul class="crono">
-        <li><span>Doctorado en Ciencias de la Educación, Universidad Rafael Belloso Chacín<span class="d">Tesis aprobada con calificación Excelente; grado en trámite.</span></span><span class="a">2026</span></li>
-        <li><span>Maestría en Inteligencia Artificial, Universidad de La Sabana<span class="d">En curso.</span></span><span class="a">en curso</span></li>
-        <li><span>Maestría en Educación para la Innovación Pedagógica, Fundación Universitaria del Área Andina<span class="d">Culminada, en espera de grado.</span></span><span class="a">2026</span></li>
-        <li><span>Postdoctorado en Gerencia de la Ciencia y la Tecnología, Universidad Rafael Belloso Chacín</span><span class="a">2025</span></li>
-        <li><span>Doctor en Ciencias, mención Gerencia, Universidad Rafael Belloso Chacín</span><span class="a">2023</span></li>
-        <li><span>Maestría en Ingeniería de Control y Automatización de Procesos, Universidad Rafael Belloso Chacín</span><span class="a">2020</span></li>
-        <li><span>Especialización en Pedagogía e Investigación en el Aula, Universidad de La Sabana</span><span class="a">2026</span></li>
-        <li><span>Especialización en Pedagogía y Docencia, Fundación Universitaria del Área Andina</span><span class="a">2023</span></li>
-        <li><span>Especialización en Informática Educativa, Fundación Universitaria del Área Andina</span><span class="a">2021</span></li>
-        <li><span>Ingeniería de Sistemas, Universidad de Santander</span><span class="a">2000</span></li>
-      </ul>
-      <p class="nota">Formación complementaria: diplomados de la Universidad de La Sabana en Inteligencia Artificial con Deep Learning, Big Data, Data Science y Power BI, Educación con enfoque STEM, y Diseño Universal para el Aprendizaje y Educación Inclusiva; curso de Estrategia Empresarial y Sostenibilidad en la Universitat Politècnica de València (2026); especializaciones tecnológicas del SENA en Bases de Datos y Web Master.</p>
-    </div>
-  </details>
-  </div>
-  </main>
-  <footer>Leonar Socarrás Molina, PhD. Valledupar, Colombia.</footer>
-</div>
+</section>
+<footer><div class="envoltura"><span>Leonar Socarrás Molina, PhD. Valledupar, Colombia.</span><span><a href="https://orcid.org/0000-0003-0601-9151" target="_blank" rel="noopener">ORCID 0000-0003-0601-9151</a></span></div></footer>
+
 <script>
 (function(){
-  var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
-  var panels=tabs.map(function(t){return document.getElementById(t.getAttribute('aria-controls'));});
-  function activar(i,foco){
-    if(i<0||i>=tabs.length)i=0;
-    tabs.forEach(function(t,k){var on=k===i;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;panels[k].hidden=!on;});
-    if(foco)tabs[i].focus();
-    try{localStorage.setItem('segmento',i);}catch(e){}
-  }
+  var b=document.querySelector('.abrir-menu'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){var a=m.classList.toggle('abierto');b.setAttribute('aria-expanded',a);});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('abierto');b.setAttribute('aria-expanded','false');}});
+  var pista=document.querySelector('.pista');
+  document.querySelectorAll('.flechas button').forEach(function(btn){
+    btn.addEventListener('click',function(){var c=pista.querySelector('.pub');pista.scrollBy({left:(+btn.dataset.dir)*(c.offsetWidth+24),behavior:'smooth'});});
+  });
+  var tabs=[].slice.call(document.querySelectorAll('.pestanas [role="tab"]'));
+  function act(i,f){tabs.forEach(function(t,k){var on=k===i;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;document.getElementById(t.getAttribute('aria-controls')).hidden=!on;});if(f)tabs[i].focus();}
   tabs.forEach(function(t,i){
-    t.addEventListener('click',function(){activar(i);});
-    t.addEventListener('keydown',function(e){
-      var n=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:e.key==='Home'?0:e.key==='End'?tabs.length-1:null;
-      if(n===null)return;e.preventDefault();activar((n+tabs.length)%tabs.length,true);
-    });
+    t.addEventListener('click',function(){act(i);});
+    t.addEventListener('keydown',function(e){var n=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:null;if(n===null)return;e.preventDefault();act((n+tabs.length)%tabs.length,true);});
   });
-  function irA(id){
-    var d=id&&document.getElementById(id);
-    if(!d||!d.classList.contains('acordeon'))return false;
-    activar(panels.indexOf(d.closest('.panel')));d.open=true;
-    d.scrollIntoView({block:'start'});return true;
-  }
-  var inicial=0;try{inicial=+localStorage.getItem('segmento')||0;}catch(e){}
-  if(!irA(location.hash.slice(1)))activar(inicial);
-  window.addEventListener('hashchange',function(){irA(location.hash.slice(1));});
-  var todo=document.querySelector('.todo');
-  todo.addEventListener('click',function(){
-    var abrir=todo.getAttribute('aria-pressed')!=='true';
-    document.querySelectorAll('.acordeon').forEach(function(d){d.open=abrir;});
-    todo.setAttribute('aria-pressed',abrir);todo.textContent=abrir?'Contraer todo':'Expandir todo';
-  });
-  var abiertos=[];
-  window.addEventListener('beforeprint',function(){abiertos=[].map.call(document.querySelectorAll('.acordeon'),function(d){var o=d.open;d.open=true;return o;});});
-  window.addEventListener('afterprint',function(){document.querySelectorAll('.acordeon').forEach(function(d,k){d.open=abiertos[k];});});
+  window.addEventListener('beforeprint',function(){tabs.forEach(function(t){document.getElementById(t.getAttribute('aria-controls')).hidden=false;});});
+  window.addEventListener('afterprint',function(){act(tabs.findIndex(function(t){return t.getAttribute('aria-selected')==='true';}));});
 })();
 </script>
 </body>
