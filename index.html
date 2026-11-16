@@ -51,11 +51,6 @@
   .marca{display:inline-flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.02em;text-decoration:none;font-size:1rem;}
   .marca img{width:56px;height:56px;filter:drop-shadow(0 6px 10px rgba(20,4,10,.35));transition:transform .25s;}
   .marca:hover img{transform:rotate(-6deg) scale(1.06);}
-  .menu .tarjeta-link{color:var(--gold);font-weight:600;opacity:1;}
-  .menu{display:flex;gap:28px;list-style:none;margin:0;padding:0;}
-  .menu a{text-decoration:none;font-size:.98rem;opacity:.92;}
-  .menu a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--gold);}
-  .abrir-menu{display:none;background:none;border:1px solid rgba(255,255,255,.5);color:#fff;border-radius:var(--r-sm);padding:6px 12px;font:inherit;font-size:.9rem;cursor:pointer;}
   .heroe-grid{position:relative;z-index:2;display:grid;grid-template-columns:440px 1fr;gap:72px;align-items:end;padding:72px 0 64px;}
   .figura{position:relative;width:380px;height:470px;margin-left:60px;}
   .rejilla{position:absolute;left:120px;top:-24px;width:300px;height:400px;border-left:1px solid rgba(255,255,255,.85);border-top:1px solid rgba(255,255,255,.85);
@@ -162,6 +157,52 @@
     background:radial-gradient(120% 120% at 30% 20%,#3a0f1c 0%,#1d060c 70%);box-shadow:inset 0 0 0 1px rgba(255,210,94,.18),0 6px 16px rgba(40,8,18,.25);}
   .neon svg{width:58%;height:58%;fill:none;filter:drop-shadow(0 0 1.5px rgba(255,210,94,.9)) drop-shadow(0 0 5px rgba(255,111,156,.55));}
   .neon.texto{font-weight:800;color:#ffd25e;text-shadow:0 0 4px rgba(255,210,94,.9),0 0 10px rgba(255,111,156,.6);}
+  /* menú */
+  .menu{display:flex;align-items:center;gap:2px;list-style:none;margin:0;padding:6px;background:rgba(20,4,10,.28);border:1px solid rgba(255,255,255,.14);border-radius:999px;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);}
+  .menu a{display:flex;align-items:center;gap:8px;white-space:nowrap;padding:9px 14px;border-radius:999px;font-size:.9rem;font-weight:500;color:#f3e9ea;text-decoration:none;transition:background-color .15s,color .15s;}
+  .menu a svg{width:18px;height:18px;flex:none;fill:none;--n1:#ffd25e;--n2:#ff8fb0;filter:drop-shadow(0 0 3px rgba(255,210,94,.45));}
+  .menu a:hover{background:rgba(255,255,255,.12);color:#fff;}
+  .menu a[aria-current="page"]{background:#fff;color:var(--navy);font-weight:600;}
+  .menu a[aria-current="page"] svg,.menu .tarjeta-link svg{--n1:#3f1220;--n2:#8a3a45;filter:none;}
+  .menu .tarjeta-link{background:var(--gold);color:var(--navy);font-weight:700;margin-left:4px;}
+  .menu .tarjeta-link:hover{background:#e6b93d;color:var(--navy);}
+  .abrir-menu{display:none;align-items:center;gap:8px;background:rgba(20,4,10,.28);border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:999px;padding:8px 16px;font:inherit;font-size:.92rem;font-weight:600;cursor:pointer;}
+  .abrir-menu svg{width:18px;height:18px;fill:none;stroke:var(--gold);stroke-width:2;stroke-linecap:round;}
+  @media (max-width:1560px) and (min-width:981px){.marca span{display:none;}}
+  @media (max-width:1300px) and (min-width:981px){.menu a svg{display:none;}.menu a{padding:9px 12px;}}
+  @media (max-width:980px){
+    .abrir-menu{display:inline-flex;}
+    .menu{display:none;position:fixed;right:16px;top:84px;z-index:50;max-height:calc(100vh - 100px);overflow:auto;flex-direction:column;align-items:stretch;gap:4px;padding:10px;min-width:240px;border-radius:18px;background:rgba(46,12,23,.96);box-shadow:0 18px 40px rgba(0,0,0,.35);}
+    .menu.abierto{display:flex;}
+    .menu a{padding:12px 14px;border-radius:12px;font-size:1rem;}
+    .menu .tarjeta-link{margin:4px 0 0;}
+  }
+  /* páginas internas */
+  .subheroe{position:relative;background:var(--hero);color:#fff;overflow:hidden;padding-bottom:64px;}
+  .subheroe .barra{position:relative;}
+  .sub-grid{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;padding-top:56px;}
+  .migas{font-size:.88rem;color:#ead9dc;margin-bottom:12px;}
+  .migas a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4);}
+  .subheroe h1{margin:0 0 12px;font-size:clamp(2.2rem,4.4vw,3.4rem);line-height:1.08;font-weight:800;letter-spacing:-.01em;}
+  .subheroe .sub-bajada{margin:0;font-size:1.1rem;color:#f3e9ea;max-width:640px;}
+  .sub-big{width:104px;height:104px;border-radius:26px;flex:none;}
+  .pagina > h2{font-size:clamp(1.5rem,2.4vw,2rem);color:var(--ink);margin:56px 0 22px;}
+  .pagina > h2:first-child{margin-top:0;}
+  .paginacion{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:8px;}
+  .paginacion a{display:flex;flex-direction:column;gap:2px;padding:16px 20px;border:1px solid var(--line);border-radius:var(--r-md);background:#fff;text-decoration:none;color:var(--navy);min-width:220px;transition:border-color .15s,box-shadow .15s;}
+  .paginacion a:hover{border-color:var(--navy);box-shadow:0 10px 24px rgba(63,18,32,.08);}
+  .paginacion small{color:var(--muted);font-size:.82rem;}
+  .paginacion strong{font-size:1.05rem;}
+  .paginacion .sig{margin-left:auto;text-align:right;}
+  .canales{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .canal{display:flex;gap:16px;align-items:center;padding:20px;border:1px solid var(--line);border-radius:var(--r-md);background:#fff;text-decoration:none;color:inherit;transition:border-color .15s;}
+  a.canal:hover{border-color:var(--navy);}
+  .canal .neon{width:52px;height:52px;}
+  .canal strong{display:block;color:var(--ink);font-size:1.02rem;}
+  .canal small{display:block;color:var(--muted);font-size:.88rem;overflow-wrap:anywhere;}
+  .ver-mas{display:inline-flex;margin-top:22px;font-weight:600;color:var(--navy);text-decoration:none;border-bottom:2px solid var(--gold);}
+  @media (max-width:1080px){.canales{grid-template-columns:1fr 1fr;}}
+  @media (max-width:720px){.sub-grid{padding-top:40px;}.sub-big{width:72px;height:72px;border-radius:18px;}.canales{grid-template-columns:1fr;}.paginacion a{min-width:0;flex:1;}}
   /* acordeón */
   .acc-cabeza{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:32px;}
   .acordeon{display:grid;gap:14px;}
@@ -207,10 +248,6 @@
     .acc-cuerpo{padding:4px 16px 22px;}
     .acc-cabeza .btn{flex:none;}
     .envoltura{padding:0 20px;}
-    .abrir-menu{display:block;}
-    .menu{display:none;position:absolute;right:0;top:56px;flex-direction:column;gap:4px;background:var(--navy);padding:12px;border-radius:var(--r-md);min-width:200px;box-shadow:0 14px 30px rgba(0,0,0,.25);}
-    .menu.abierto{display:flex;}
-    .menu a{display:block;padding:8px 10px;}
     .figura{width:250px;height:310px;margin-left:34px;}
     .arco{border-radius:125px 125px 0 0;}
     .rejilla{left:80px;width:200px;height:270px;background-size:66.6px 66.6px;top:-18px;}
@@ -276,22 +313,23 @@
       <path d="M92 68h8l-1.5 10h-5z" fill="#d4a52c"/>
       <path d="M60 46 96 49.5" stroke="#d4a52c" stroke-width="2.2"/>
     </symbol>
+    <symbol id="n-tarjeta" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="var(--n1)"/><circle cx="8.5" cy="11" r="2" stroke="var(--n2)"/><path d="M5.8 16.2c.6-1.4 1.6-2 2.7-2s2.1.6 2.7 2M14 10h4M14 13h3" stroke="var(--n2)"/></symbol>
   </defs>
 </svg>
 
 <header class="heroe" id="inicio">
   <div class="envoltura">
     <nav class="barra" aria-label="Principal">
-      <a class="marca" href="#inicio" aria-label="Leonar Socarrás, inicio"><img src="img/logo-3d-160.png" alt="" width="56" height="56"><span>Leonar.Socarras</span></a>
-      <button class="abrir-menu" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+      <a class="marca" href="index.html" aria-label="Leonar Socarrás, inicio"><img src="img/logo-3d-160.png" alt="" width="56" height="56"><span>Leonar.Socarras</span></a>
+      <button class="abrir-menu" type="button" aria-expanded="false" aria-controls="menu"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menú</button>
       <ul class="menu" id="menu">
-        <li><a href="#sobre">Sobre mí</a></li>
-        <li><a href="#lineas">Investigación</a></li>
-        <li><a href="#publicaciones">Publicaciones</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#trayectoria">Trayectoria</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a class="tarjeta-link" href="tarjeta.html">Mi tarjeta</a></li>
+        <li><a href="sobre-mi.html"><svg aria-hidden="true"><use href="#n-persona"/></svg><span>Sobre mí</span></a></li>
+        <li><a href="investigacion.html"><svg aria-hidden="true"><use href="#n-chip"/></svg><span>Investigación</span></a></li>
+        <li><a href="publicaciones.html"><svg aria-hidden="true"><use href="#n-libro"/></svg><span>Publicaciones</span></a></li>
+        <li><a href="proyectos.html"><svg aria-hidden="true"><use href="#n-cohete"/></svg><span>Proyectos</span></a></li>
+        <li><a href="trayectoria.html"><svg aria-hidden="true"><use href="#n-maletin"/></svg><span>Trayectoria</span></a></li>
+        <li><a href="contacto.html"><svg aria-hidden="true"><use href="#n-correo"/></svg><span>Contacto</span></a></li>
+        <li><a class="tarjeta-link" href="tarjeta.html"><svg aria-hidden="true"><use href="#n-tarjeta"/></svg><span>Mi tarjeta</span></a></li>
       </ul>
     </nav>
     <div class="heroe-grid">
@@ -345,6 +383,7 @@
         <div><dt>2</dt><dd>doctorados en gerencia y educación</dd></div>
       </dl>
       </div>
+          <a href="sobre-mi.html" class="ver-mas">Ver página completa &rarr;</a>
         </div>
       </details>
       <details class="acc" id="lineas">
@@ -358,6 +397,7 @@
         <article class="tarjeta"><span class="neon tarjeta-ic"><svg aria-hidden="true"><use href="#n-robot"/></svg></span><h3>Aprendizaje por refuerzo y profundo</h3><p>Q-Learning, DQN y transferencia con modelos preentrenados.</p></article>
         <article class="tarjeta"><span class="neon tarjeta-ic"><svg aria-hidden="true"><use href="#n-comunidad"/></svg></span><h3>Innovación e investigación-acción</h3><p>Transformación de prácticas pedagógicas desde la escuela, con la comunidad.</p></article>
       </div>
+          <a href="investigacion.html" class="ver-mas">Ver página completa &rarr;</a>
         </div>
       </details>
       <details class="acc" id="publicaciones">
@@ -373,6 +413,7 @@
         <article class="pub"><span class="anio">2020</span><h3>Control en cascada para las variables de nivel y flujo en una planta piloto</h3><p class="revista">INGENIUM, Centro Tecnológico de Investigación y Consultoría en Ingeniería</p></article>
         <article class="pub"><span class="anio">2020</span><h3>Robot híbrido para inspecciones y mantenimiento de paneles solares fotovoltaicos</h3><p class="revista">INGENIUM, Centro Tecnológico de Investigación y Consultoría en Ingeniería</p></article>
       </div>
+          <a href="publicaciones.html" class="ver-mas">Ver página completa &rarr;</a>
         </div>
       </details>
       <details class="acc" id="proyectos">
@@ -403,6 +444,7 @@
         <a class="proy" href="https://github.com/leonar-socarras/mountain_car" target="_blank" rel="noopener"><span class="estado">Python</span><h3>mountain_car &nearr;</h3><p class="marco">Aprendizaje por refuerzo</p><p>Q-Learning tabular frente a DQN en MountainCar-v0, con visualizaciones y pruebas automatizadas.</p></a>
         <a class="proy" href="https://github.com/leonar-socarras/pong_dqn" target="_blank" rel="noopener"><span class="estado">Python</span><h3>pong_dqn &nearr;</h3><p class="marco">Simulación y Aprendizaje por Refuerzo</p><p>DQN que aprende a jugar Pong desde píxeles.</p></a>
       </div>
+          <a href="proyectos.html" class="ver-mas">Ver página completa &rarr;</a>
         </div>
       </details>
       <details class="acc" id="trayectoria">
@@ -433,6 +475,7 @@
           <p class="nota">Además: diplomados de la Universidad de La Sabana en IA con Deep Learning, Big Data y Power BI, STEM y DUA; curso en la Universitat Politècnica de València (2026); especializaciones tecnológicas del SENA en Bases de Datos y Web Master.</p>
         </div>
       </div>
+          <a href="trayectoria.html" class="ver-mas">Ver página completa &rarr;</a>
         </div>
       </details>
       <details class="acc" id="habilidades">
